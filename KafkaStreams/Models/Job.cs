@@ -1,7 +1,10 @@
-﻿namespace KafkaStreams.Models;
+﻿using System;
 
-public class Job
+namespace KafkaStreams.Models
 {
-    public string Id { get; set; } = Guid.NewGuid().ToString();
-    public string Company { get; set; }
+    public class Job
+    {
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public string Company { get; set; }
+    }
 }

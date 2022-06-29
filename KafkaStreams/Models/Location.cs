@@ -1,7 +1,10 @@
-﻿namespace KafkaStreams.Models;
+﻿using System;
 
-public class Location
+namespace KafkaStreams.Models
 {
-    public string Id { get; set; } = Guid.NewGuid().ToString();
-    public string City { get; set; }
+    public class Location
+    {
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public string City { get; set; }
+    }
 }
